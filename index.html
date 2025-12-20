@@ -712,6 +712,12 @@
 	    <!-- Email subject -->
             <input type="hidden" name="_subject" value="New contact from Crometech website">
 
+            <!-- Force Formspree to show all fields -->
+            <input type="hidden" name="_template" value="table">
+
+            <!-- Reply goes to sender -->
+            <input type="hidden" name="_replyto" value="%email%">
+
             <input type="text" name="name" placeholder="Full name" required>
             <input type="email" name="email" placeholder="Work email" required>
             <input type="text" name="company" placeholder="Company (optional)">
