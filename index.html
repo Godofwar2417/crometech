@@ -709,28 +709,39 @@
         <div class="card form">
           <form action="https://formspree.io/f/xdanezry" method="POST">
 
-	    <!-- Email subject -->
-            <input type="hidden" name="_subject" value="New contact from Crometech website">
-
-            <!-- Force Formspree to show all fields -->
-            <input type="hidden" name="_template" value="table">
-
-            <!-- Reply goes to sender -->
+ 	    <input type="hidden" name="_subject" value="New contact from Crometech website">
+ 	    <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_format" value="plain">
             <input type="hidden" name="_replyto" value="%email%">
 
-            <input type="text" name="name" placeholder="Full name" required>
-            <input type="email" name="email" placeholder="Work email" required>
-            <input type="text" name="company" placeholder="Company (optional)">
-            <textarea name="message" rows="5" placeholder="What do you want Crometech to help with?"></textarea>
+ 	    <label>
+   	      Full name:
+              <input type="text" name="name" required>
+	    </label>
 
-            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:4px">
+            <label>
+              Email address:
+              <input type="email" name="email" required>
+            </label>
+
+            <label>
+              Company (optional):
+              <input type="text" name="company">
+            </label>
+
+            <label>
+              Message:
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+
+	    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:4px">
               <button type="submit">Send message</button>
               <button
                 type="button"
                 onclick="location.href='#services'"
                 style="background:var(--accent-soft); color:#0f172a; font-weight:500; border:1px solid rgba(15,23,42,0.12); border-radius:999px; padding:11px 16px; cursor:pointer; font-size:13px;"
-	     >
-                View services instead
+              >
+     	        View services instead
               </button>
             </div>
           </form>
