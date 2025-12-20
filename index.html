@@ -778,21 +778,6 @@
     </div>
   </footer>
 
-  <script>
-    function submitForm(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      if(!name || !email){
-        alert('Please provide name and email');
-        return false;
-      }
-      alert('Thanks ' + name + '! Crometech.com has received your message.');
-      document.getElementById('contactForm').reset();
-      return false;
-    }
-  </script>
 
 </body>
 </html>
