@@ -707,14 +707,23 @@
       <p class="lead">Share a few details and the Crometech team will respond within one business day.</p>
       <div class="contact">
         <div class="card form">
-          <form id="contactForm" onsubmit="return submitForm(event)">
-            <input type="text" id="name" placeholder="Full name" required>
+          <form action="https://formspree.io/f/xdanezry" method="POST">
+
+	    <!-- Email subject -->
+            <input type="hidden" name="_subject" value="New contact from Crometech website">
+
+            <input type="text" name="name" placeholder="Full name" required>
             <input type="email" id="email" placeholder="Work email" required>
             <input type="text" id="company" placeholder="Company (optional)">
             <textarea id="message" rows="5" placeholder="What do you want Crometech to help with?"></textarea>
+
             <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:4px">
               <button type="submit">Send message</button>
-              <button type="button" onclick="location.href='#services'" style="background:var(--accent-soft); color:#0f172a; font-weight:500; border:1px solid rgba(15,23,42,0.12); border-radius:999px; padding:11px 16px; cursor:pointer; font-size:13px;">
+              <button
+                type="button"
+                onclick="location.href='#services'"
+                style="background:var(--accent-soft); color:#0f172a; font-weight:500; border:1px solid rgba(15,23,42,0.12); border-radius:999px; padding:11px 16px; cursor:pointer; font-size:13px;"
+	     >
                 View services instead
               </button>
             </div>
