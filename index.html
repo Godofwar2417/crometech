@@ -62,20 +62,13 @@
       color:#0f172a;
     }
     .brand .logo{
-      width:36px;
-      height:36px;
+      width:72px;
+      height:72px;
       border-radius:999px;
-      background:conic-gradient(from 160deg,#22d3ee,#6366f1,#a855f7,#22d3ee);
+      background:transparent;
       padding:2px;
       position:relative;
       overflow:hidden;
-    }
-    .brand .logo::after{
-      content:"";
-      position:absolute;
-      inset:3px;
-      border-radius:999px;
-      background:radial-gradient(circle at 20% 0%,#ffffff,#e2e8f0);
     }
     .brand-text-main{
       font-size:16px;
@@ -459,13 +452,19 @@
   <!-- NAV -->
   <header class="nav">
     <div class="nav-inner">
-      <div class="brand">
-        <span class="logo" aria-hidden="true"></span>
+      <div class="brand">        
+	<img
+ 	 src="https://crometech.com/new.png"
+ 	 alt="Crometech logo"
+ 	 class="logo"
+	/>
+
         <div>
           <div class="brand-text-main">Crometech</div>
           <div class="brand-text-sub">IT services • trading • training</div>
         </div>
       </div>
+
 
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#services">Services</a>
@@ -683,7 +682,7 @@
       <p class="lead">A snapshot of Crometech projects across finance, retail and enterprise IT.</p>
       <div class="portfolio-grid">
         <div class="portfolio-item">
-          <img src="https://picsum.photos/seed/1/600/400" alt="Cloud migration for finance sector">
+          <img src="https://crometech.com/cloud.png" alt="Cloud migration for finance sector">
           <div class="portfolio-caption">Cloud migration — finance</div>
         </div>
         <div class="portfolio-item">
@@ -691,11 +690,11 @@
           <div class="portfolio-caption">E-commerce platform</div>
         </div>
         <div class="portfolio-item">
-          <img src="https://picsum.photos/seed/3/600/400" alt="Enterprise security assessment">
+          <img src="https://crometech.com/ESA.png" alt="Enterprise security assessment">
           <div class="portfolio-caption">Security assessment</div>
         </div>
         <div class="portfolio-item">
-          <img src="https://picsum.photos/seed/4/600/400" alt="Internal tools and automation">
+          <img src="https://crometech.com/ITA.png" alt="Internal tools and automation">
           <div class="portfolio-caption">Internal tools &amp; automation</div>
         </div>
       </div>
